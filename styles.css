@@ -98,6 +98,7 @@
    font: 400 22px/25px Roboto, arial, helvetica, sans-serif;
    max-width: 420px;
  }
+
  .main__button{
   display: inline-block;
   font:500 18px/21px Roboto, arial, helvetica, sans-serif;
@@ -108,10 +109,21 @@
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
+  cursor: pointer;
+  box-shadow: 0 -200px 100px -120px #00AD9F inset;
+  animation: btn_shine 4s infinite alternate;
  }
- .main__button:hover{
-   opacity: .5;
- }
+@keyframes btn_shine{
+50%{
+background: #7EE8D4;
+box-shadow: 0 -200px 100px -100px #EF832B inset;
+}
+}
+.main__button:hover{
+  opacity: .5;
+  padding: 20px 25px 20px 25px;
+  animation-play-state: paused;
+}
  .main__title-text_highlight{
   background: #ECF3FF;
  }
