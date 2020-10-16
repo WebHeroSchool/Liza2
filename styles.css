@@ -133,16 +133,18 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
     padding-right: 58%;
   }
   .main__title{
-    font: 700 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 66px;
     margin-top: 16px;
     margin-bottom: 36px;
   }
   .main__subtitle{
-    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+    font-size: 18px;
+    line-height: normal;
     margin-bottom: 38px;
   }
   .main__button{
-    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    font-size: 14px;
   }
   .menu__item{
     font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
@@ -163,16 +165,15 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
     padding-right: 58%;
   }
   .main__title{
-    font: 700 50px/66px pt_serifbold, arial, helvetica, sans-serif;
     margin-top: 16px;
     margin-bottom: 36px;
   }
   .main__subtitle{
-    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+    font-size: 18px;
     margin-bottom: 38px;
   }
   .main__button{
-    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    font-size: 14px;
   }
   .menu__item{
     font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
@@ -204,18 +205,20 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
     background-position: top center;
   }
   .main__title{
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     margin-top: 23px;
-    font: 700 30px/39px pt_serifbold, arial, helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 40px;
   }
   .main__subtitle{
     margin-bottom: 20px;
-    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 19px;
     max-width: 258px;
     padding-left: 37px;
   }
   .main__button{
-    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    font-size: 14px;
   }
   .logo{
     color: #fff;
