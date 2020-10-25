@@ -127,6 +127,12 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
  .main__title-text_highlight{
   background: #ECF3FF;
  }
+  #checkbox{
+  display: none;
+}
+.burger__item{
+  visibility: hidden;
+}
 @media(max-width:1366px){
   .main{
     background-size: 55%;
@@ -145,6 +151,7 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
   }
   .main__button{
     font-size: 14px;
+    padding-bottom: 10px;
   }
   .menu__item{
     font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
@@ -189,10 +196,25 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
   }
 }
 @media(max-width:768px){
- .menu{
-    background: url(img/burger.svg) no-repeat right;
+  .burger__item{
+    visibility: visible;
+    padding-top: 32px;
+    padding-left: 255px;
   }
-  .menu__item{
+  #checkbox:checked ~ .menu{
+  visibility: visible;
+  position: fixed;
+  top: 62px;
+  left: 24px;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+}
+.burger__item:hover{
+  background: no-repeat top right url(img/x.png);
+}
+  .menu{
     visibility: hidden;
   }
   .header{
@@ -221,8 +243,9 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
     font-size: 14px;
   }
   .logo{
-    color: #fff;
-    border: 1px solid transparent;
+  width: 0px;
+  color:#fff;
+    /*border: 1px solid transparent;*/
   }
   .container{
     padding: 0 0;
