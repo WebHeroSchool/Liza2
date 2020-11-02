@@ -88,7 +88,7 @@
  }
  .main__title{
    margin-bottom:35px;
-   margin-top: 72px;
+   margin-top: 73px;
    font: 700 66px/87px pt_serifbold, arial, helvetica, sans-serif;
    font-style: normal;
  }
@@ -198,18 +198,19 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
 .menu__btn > span::before,
 .menu__btn > span::after {
   display: block;
-  position: absolute;
+  position: relative;
   width: 25px;
   height: 2px;
   background-color: #0056EC;
+  margin-top: 16px;
 }
 .menu__btn > span::before {
   content: '';
-  top: -8px;
+  top: -6px;
 }
 .menu__btn > span::after {
   content: '';
-  top: 8px;
+  top: -12px;
 }
 #checkbox:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -219,29 +220,40 @@ box-shadow: 0 -200px 100px -100px #EF832B inset;
   transform: rotate(0);
 }
 #checkbox:checked ~ .menu__btn > span::after {
-  top: 0;
+  top: -18px;
   transform: rotate(90deg);
 }
   #checkbox:checked ~ .menu{
   visibility: visible;
-  position: fixed;
   top: 62px;
   left: 24px;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   z-index: 10;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 94px;
 }
   .menu{
     visibility: hidden;
+    position: absolute;
   }
+  .menu__item{
+        font: 500 30px/35px Roboto,arial,helvetica,sans-serif;
+        margin-top: 24px;
+  }
+  .menu__item_active:after {
+    opacity: 0;
+}
   .header{
-    margin-bottom: 16px;
-    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-top: 21px;
   }
   .main{
     text-align: center;
-    padding: 68% 0 0;
+    padding: 74% 0 0;
     background-size: 88%;
     background-position: top center;
   }
